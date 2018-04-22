@@ -1,0 +1,52 @@
+{
+  "name": "telegraf-state-s3",
+  "version": "1.0.0",
+  "main": "src/session.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mdsina/telegraf-session-s3.git"
+  },
+  "keywords": [
+    "telegram",
+    "telegram bot",
+    "telegraf",
+    "bot framework",
+    "session",
+    "middleware",
+    "aws",
+    "aws s3",
+    "s3",
+    "amazon"
+  ],
+  "author": "Daniil Mikhaylov <info@mdsina.ru>",
+  "bugs": {
+    "url": "https://github.com/mdsina/telegraf-session-s3/issues"
+  },
+  "homepage": "https://github.com/mdsina/telegraf-session-s3#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "files": [
+    "src/session.js"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "debug": "^3.0.0"
+  },
+  "peerDependencies": {
+    "telegraf": "^3.9.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.226.1",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "telegraf": "^3.9.0"
+  }
+}
