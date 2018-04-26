@@ -1,6 +1,6 @@
 {
   "name": "telegraf-session-s3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/session.js",
   "repository": {
     "type": "git",
