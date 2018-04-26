@@ -11,13 +11,13 @@ function getS3Object(bucket, file) {
             if (error) {
                 debug('Cannot get S3 object:', error);
                 if (error.code && error.code === 'NoSuchKey') {
-                    return resolve({});
+                    return resolve('{}');
                 }
                 return reject(error);
             }
 
             return resolve(data.Body.toString('utf-8'));
-        });
+        }).then(data => JSON.parse(data));
     });
 }
 
