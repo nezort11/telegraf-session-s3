@@ -1,5 +1,5 @@
 {
-  "name": "telegraf-state-s3",
+  "name": "telegraf-session-s3",
   "version": "1.0.0",
   "main": "src/session.js",
   "repository": {
