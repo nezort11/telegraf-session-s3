@@ -17,8 +17,8 @@ function getS3Object(bucket, file) {
             }
 
             return resolve(data.Body.toString('utf-8'));
-        }).then(data => JSON.parse(data));
-    });
+        });
+    }).then(data => JSON.parse(data));
 }
 
 function putStringToBucket(bucket, key, body) {
