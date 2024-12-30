@@ -1,7 +1,6 @@
 {
   "name": "telegraf-session-s3",
   "version": "1.0.2",
-  "main": "src/session.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mdsina/telegraf-session-s3.git"
@@ -25,28 +24,23 @@
   "homepage": "https://github.com/mdsina/telegraf-session-s3#readme",
   "license": "MIT",
   "engines": {
-    "node": ">=8.10.0"
+    "node": ">=14"
   },
-  "files": [
-    "src/session.js"
-  ],
+  "main": "dist/session.js",
+  "types": "dist/session.d.ts",
   "scripts": {
-    "lint": "eslint ."
+    "build": "npx tsc --build",
+    "lint": "eslint .",
+    "upgrade": "npx npm-check-updates"
   },
   "dependencies": {
-    "aws-sdk": "^2.226.1",
-    "debug": "^3.0.0"
-  },
-  "peerDependencies": {
-    "telegraf": "^3.9.0"
+    "s3-localstorage": "^1.1.1"
   },
   "devDependencies": {
-    "eslint": "^4.1.1",
-    "eslint-config-standard": "^10.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "telegraf": "^3.9.0"
+    "@aws-sdk/client-s3": "^3.717.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "telegraf": "^4.16.3",
+    "typescript": "^5.7.2"
   }
 }
