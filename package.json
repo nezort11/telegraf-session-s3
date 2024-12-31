@@ -1,6 +1,6 @@
 {
-  "name": "telegraf-session-s3",
-  "version": "1.0.2",
+  "name": "telegraf-session-s33",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mdsina/telegraf-session-s3.git"
@@ -34,7 +34,7 @@
     "upgrade": "npx npm-check-updates"
   },
   "dependencies": {
-    "s3-localstorage": "^1.1.1"
+    "s3-localstorage": "^1.1.2"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.717.0",
